@@ -1,0 +1,97 @@
+@use "./partials/global" as *;
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.header {
+  &--first {
+    font-weight: lighter;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  &--second {
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin:0 auto;
+    font-size: 2rem;
+
+  }
+
+  p {
+      width: 35%;
+      text-align: center;
+      margin-bottom: 3rem;
+      font-weight: 100;
+      color: hsl(234, 12%, 34%);
+  }
+}
+
+@mixin flex-template {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    @include flex-template;
+}
+
+.top-bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include flex-template()
+}
+
+.card {
+    height: 12rem;
+    border-radius: 5px;
+    padding: 2rem 2rem;
+    width: 18rem;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+    background-color: #fff;
+
+    &:nth-child(1) {
+        border-top: 5px solid hsl(180, 62%, 55%);
+    }
+
+    &:nth-child(2) {
+        border-top: 5px solid hsl(34, 97%, 64%);
+    }
+
+    &:nth-child(3) {
+        border-top: 5px solid hsl(212, 86%, 64%);
+    }
+
+    h3 {
+        font-weight: 400;
+        margin-top: 0;
+
+    }
+
+    p {
+        font-weight: lighter;
+        color: hsl(229, 6%, 66%);
+        
+    }
+}
+
+.card-red {
+    border-top: 5px solid hsl(0, 78%, 62%) !important;
+}
+
+.card__portion--bottom {
+    display: flex;
+    justify-content: flex-end;
+}

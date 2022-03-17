@@ -1,0 +1,117 @@
+@use "./partials/global" as *;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.header--first {
+  font-weight: lighter;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.header--second {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.header p {
+  width: 35%;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 100;
+  color: #4c4e61;
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.top-bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  height: 12rem;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  width: 18rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.card:nth-child(1) {
+  border-top: 5px solid #45d3d3;
+}
+
+.card:nth-child(2) {
+  border-top: 5px solid #fcaf4a;
+}
+
+.card:nth-child(3) {
+  border-top: 5px solid #549ef2;
+}
+
+.card h3 {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.card p {
+  font-weight: lighter;
+  color: #a3a5ae;
+}
+
+.card-red {
+  border-top: 5px solid #ea5353 !important;
+}
+
+.card__portion--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=styles.css.map */
